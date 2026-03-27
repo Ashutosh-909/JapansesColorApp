@@ -1,0 +1,33 @@
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid var(--circle-border);
+  box-shadow: var(--shadow-circle);
+  flex-shrink: 0;
+}
+
+.sm {
+  width: var(--color-circle-sm);
+  height: var(--color-circle-sm);
+}
+
+.md {
+  width: var(--color-circle-md);
+  height: var(--color-circle-md);
+}
+
+.lg {
+  width: var(--color-circle-lg);
+  height: var(--color-circle-lg);
+}
+
+.inline {
+  width: var(--color-circle-inline);
+  height: var(--color-circle-inline);
+}
+
+.missing {
+  background-color: transparent;
+  border: 2px dashed var(--border-dashed);
+  box-shadow: none;
+}

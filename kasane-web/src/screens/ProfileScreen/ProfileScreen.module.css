@@ -1,11 +1,17 @@
 .screen {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100dvh;
   padding: var(--screen-padding);
   padding-bottom: calc(var(--tab-bar-height) + var(--space-4));
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar {

@@ -1,0 +1,28 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  height: 28px;
+  padding: 0 var(--space-3);
+  border-radius: 14px;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-semibold);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.complete {
+  background-color: var(--status-complete);
+}
+
+.partial {
+  background-color: var(--status-partial);
+}
+
+.low {
+  background-color: var(--status-low);
+}
+
+.check {
+  flex-shrink: 0;
+}

@@ -1,0 +1,48 @@
+.wrapper {
+  transition-duration: var(--duration, 400ms);
+  transition-timing-function: ease-out;
+  will-change: opacity, transform;
+}
+
+/* ── Fade ── */
+.fade {
+  opacity: 0;
+  transition-property: opacity;
+}
+.fade.enter {
+  opacity: 1;
+}
+
+/* ── Slide Up (Splash → Upload) ── */
+.slideUp {
+  opacity: 0;
+  transform: translateY(30px);
+  transition-property: opacity, transform;
+}
+.slideUp.enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Slide Left (Upload → Categorize) ── */
+.slideLeft {
+  opacity: 0;
+  transform: translateX(40px);
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in-out;
+}
+.slideLeft.enter {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Scale Up (Categorize → Dashboard) ── */
+.scaleUp {
+  opacity: 0;
+  transform: scale(0.92);
+  transition-property: opacity, transform;
+}
+.scaleUp.enter {
+  opacity: 1;
+  transform: scale(1);
+}

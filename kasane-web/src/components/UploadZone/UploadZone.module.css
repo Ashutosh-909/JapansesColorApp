@@ -1,0 +1,32 @@
+.zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  height: 180px;
+  border: 2px dashed var(--border-dashed);
+  border-radius: var(--radius-xl);
+  background-color: var(--bg-card);
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.zone:hover {
+  border-color: var(--accent-primary);
+  background-color: rgba(76, 108, 179, 0.05);
+}
+
+.zone:active {
+  border-color: var(--accent-primary);
+  background-color: rgba(76, 108, 179, 0.1);
+}
+
+.icon {
+  color: var(--text-secondary);
+}
+
+.text {
+  font-size: var(--text-body);
+  color: var(--text-secondary);
+}

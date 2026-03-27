@@ -1,20 +1,141 @@
 .screen {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100dvh;
   padding: var(--screen-padding);
+  padding-top: var(--space-8);
+  padding-bottom: 100px;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
 .heading {
   font-size: var(--text-h1);
   font-weight: var(--weight-semibold);
   color: var(--text-primary);
+  flex: 1;
 }
 
-.stub {
-  margin-top: var(--space-4);
+.aiPill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background-color: var(--accent-primary);
+  color: var(--text-primary);
+  font-size: var(--text-caption);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── 2-col grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--card-grid-gap);
+}
+
+.card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.imageWrap {
+  width: 100%;
+  aspect-ratio: 5 / 7;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardInfo {
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* ── Category chip + dropdown ── */
+.chipWrap {
+  position: relative;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+  background: none;
   color: var(--text-muted);
   font-size: var(--text-body-sm);
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.chipSelected {
+  background-color: var(--accent-primary);
+  color: var(--text-primary);
+  border-color: transparent;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+  margin-top: var(--space-1);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  min-width: 120px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.dropItem {
+  display: block;
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: var(--text-body-sm);
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropItem:active {
+  background-color: var(--bg-card-hover);
+}
+
+/* ── Color dots ── */
+.dots {
+  display: flex;
+  gap: var(--space-1);
+}
+
+/* ── Sticky bottom button ── */
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-4) var(--screen-padding);
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-default);
 }
