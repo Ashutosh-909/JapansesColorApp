@@ -1,0 +1,98 @@
+/* ═══════════════════════════════════════════════════
+   Kasane — Design Tokens
+   Source: UIDesign.md §1.1, §1.2, §1.3
+   ═══════════════════════════════════════════════════ */
+
+:root {
+  /* ── Backgrounds ── */
+  --bg-primary: #1a1a2e;
+  --bg-card: #252547;
+  --bg-card-hover: #2e2e5c;
+  --bg-tab-bar: #12122a;
+
+  /* ── Text ── */
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6b6b82;
+
+  /* ── Borders ── */
+  --border-default: #3a3a5c;
+  --border-dashed: #5a5a7c;
+
+  /* ── Accent – Japanese Colors ── */
+  --accent-primary: #4c6cb3;        /* 群青 Gunjō (Ultramarine) */
+  --accent-primary-dark: #3a5a9e;   /* Pressed state */
+  --accent-shu: #ef4523;            /* 朱色 Shu-iro (Vermillion) */
+  --accent-fuji: #bbbcde;           /* 藤色 Fuji-iro (Wisteria) */
+  --accent-sakura: #fef4f4;         /* 桜色 Sakura-iro (Cherry Blossom) */
+  --accent-gunjo: #4c6cb3;          /* 群青 Gunjō (Ultramarine) */
+  --accent-yamabuki: #f8b500;       /* 山吹色 Yamabuki-iro (Yellow) */
+  --accent-seiji: #a8d8cb;          /* 青磁色 Seiji-iro (Celadon) */
+  --accent-nadeshiko: #eb6ea5;      /* 撫子色 Nadeshiko-iro (Pink) */
+  --accent-kon: #223a70;            /* 紺色 Kon-iro (Navy) */
+  --accent-wakakusa: #c3d825;       /* 若草色 Waka-kusa-iro (Fresh Green) */
+  --accent-choji: #928178;          /* 丁子色 Chōji-iro (Clove) */
+  --accent-sumi: #595857;           /* 墨色 Sumi-iro (Ink) */
+  --accent-haijiro: #e9e4d4;        /* 灰白 Haijiro (Ash White) */
+
+  /* ── Status Colors ── */
+  --status-complete: #2d8a4e;
+  --status-partial: #c78c20;
+  --status-low: #6b6b82;
+
+  /* ── Typography – Font Families ── */
+  --font-body: 'Inter', sans-serif;
+  --font-jp: 'Noto Sans JP', sans-serif;
+
+  /* ── Typography – Sizes ── */
+  --text-display: 32px;
+  --text-display-jp: 28px;
+  --text-h1: 24px;
+  --text-h2: 18px;
+  --text-body: 16px;
+  --text-body-sm: 14px;
+  --text-caption: 12px;
+  --text-caption-jp: 12px;
+
+  /* ── Typography – Weights ── */
+  --weight-bold: 700;
+  --weight-semibold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+
+  /* ── Spacing (4px grid) ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* ── Border Radii ── */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 20px;
+  --radius-sheet: 24px;
+
+  /* ── Shadows ── */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-circle: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+  /* ── Component Sizes ── */
+  --color-circle-sm: 20px;
+  --color-circle-md: 40px;
+  --color-circle-lg: 56px;
+  --color-circle-inline: 24px;
+  --tab-bar-height: 64px;
+  --screen-padding: 16px;
+  --card-padding: 16px;
+  --card-grid-gap: 12px;
+
+  /* ── Misc ── */
+  --overlay-dim: rgba(0, 0, 0, 0.6);
+  --paywall-overlay: rgba(26, 26, 46, 0.85);
+  --circle-border: rgba(255, 255, 255, 0.2);
+}
